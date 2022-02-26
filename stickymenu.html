@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky navbar</title>
+    <style>
+        body{
+            margin:0;
+            box-sizing:border-box ;
+        }
+        #header{
+            text-align: center;
+
+        }
+        #logo{
+            width: 250px;
+            height:auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding:15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin:10px;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #about-img{
+            width:100%;
+        }
+        p{
+            text-align: justify;
+        }
+        .sticky{
+            position: fixed;
+            top:0;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="https://www.logodee.com/wp-content/uploads/2020/01/LogoDee-Free-Logo-Design-Service.jpg" alt="">
+    </div>
+    <nav id="menu-bar">
+        <li>home</li>
+        <li>about us</li>
+        <li>product</li>
+        <li>contact</li>
+        <li>history</li>
+    </nav>
+    <div id="container">
+        <h1>About us</h1>
+        <img id="about-img" src="download.jpg" alt="">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur ut voluptatem laboriosam, amet sunt laborum provident, cupiditate, vero cum unde maiores tenetur vel quia eligendi nostrum nihil asperiores minima! Consequuntur enim dolor totam molestias ipsum eum nisi quas deserunt minus sed impedit odit hic est fuga, quidem aperiam excepturi qui dignissimos nesciunt, amet exercitationem officia praesentium consectetur? Dolore, eveniet. Vitae voluptas perferendis quos. Consectetur earum exercitationem voluptate culpa rerum est quam quidem sed velit amet. Quia vero modi totam unde blanditiis, molestias minima nobis repudiandae dicta architecto commodi iure officia quibusdam quam, magnam est dolor, aperiam omnis facere quod. Excepturi quis aspernatur quod aliquid voluptatum facilis ea dignissimos nulla, error itaque. Saepe ut maiores enim veniam perferendis consequatur optio voluptas, quis beatae sunt. Saepe quo id delectus, voluptatum ipsa unde. Esse nobis officiis distinctio veniam totam inventore aut repellat atque voluptas libero magni fuga tempore at voluptatum autem, aliquam, architecto accusamus tempora reiciendis perspiciatis? Quis possimus repellat corrupti fugit eius at exercitationem error nostrum voluptas, ab aliquid. Iusto, temporibus quam! Odit facere voluptatem, ipsam laboriosam incidunt soluta perspiciatis illo nam cum accusamus vero et ratione quaerat natus velit amet magnam facilis provident recusandae molestias similique ea fugiat id. Esse iure molestiae reprehenderit atque cumque fuga, numquam aperiam error iusto voluptatibus voluptatum assumenda excepturi blanditiis reiciendis veritatis expedita iste et libero magni corporis totam. Nostrum, dolor corporis, obcaecati veniam ut maiores voluptatum nam facere harum esse quaerat reiciendis rerum cum nemo dicta? Explicabo ex, fuga perspiciatis a quasi esse illum, reprehenderit laboriosam pariatur fugit accusantium aspernatur eveniet. Delectus mollitia doloremque saepe molestias debitis, perferendis aliquid accusamus rem maxime temporibus porro qui distinctio pariatur eum facilis! Quisquam eveniet necessitatibus sunt impedit et accusamus ex debitis, id temporibus aspernatur dignissimos pariatur, neque est voluptas consequatur nobis numquam quas itaque sint hic. Dicta voluptatibus, earum voluptas consectetur esse laboriosam iusto laudantium eum! Sed nam animi accusantium, sint pariatur rerum sapiente laboriosam, ipsa delectus ipsum corrupti et impedit expedita vitae perferendis recusandae accusamus illo distinctio modi nisi voluptatibus fuga adipisci earum velit. Voluptatem maiores, repellat, ab hic cumque porro ratione reprehenderit beatae temporibus illum, sint facere. Velit, ratione! Nesciunt consectetur veritatis in distinctio quisquam, atque repellat tempore laudantium magnam id aut adipisci ducimus minima nulla nostrum nam asperiores sunt? Molestias facere deleniti earum fuga expedita. Quibusdam consequatur, deserunt odio, ratione fugit vero atque dolor quis quas voluptatum repellat nesciunt! Distinctio porro voluptatum expedita incidunt, dolorum, sed tenetur aspernatur itaque voluptas quidem, id alias veritatis facilis ad et! Perferendis consequatur excepturi voluptas odio at, minima illo autem eos. Recusandae laborum provident, odit facilis sapiente harum hic eos autem sequi consequuntur quam alias officia corrupti voluptatem nesciunt possimus vitae beatae, nemo fugit iusto officiis sed commodi a maxime. Assumenda, facere eius. Exercitationem praesentium in doloremque, dignissimos deleniti odit quidem, dolores ullam inventore provident ipsam eveniet reprehenderit, illum expedita cum autem debitis nisi. Ipsa corporis assumenda accusantium facere quo ea quibusdam fugit voluptatibus odio autem ipsum esse praesentium mollitia nam voluptates, temporibus quae harum repellat placeat similique neque.
+        </p>
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar = document.getElementById("menu-bar")
+            if(window.pageYOffset >=191.5){
+                navbar.classList.add('sticky')
+                console.log("ok")
+            }else{
+                navbar.classList.remove('sticky')
+            }
+        })
+        
+    </script>
+</body>
+</html>
